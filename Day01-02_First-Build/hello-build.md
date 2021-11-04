@@ -51,3 +51,35 @@ Use the provided **center-page-framework** folder and add code as follows:
     ```
 
 ## Steps - CSS
+Add style rules as follows:
+1. Body:
+    1. Background color
+    2. Font color 
+    3. Font family
+2. Header/Banner section:
+    1. Heading:
+        1. Font size
+        2. Font styling
+    2. Paragraph:
+        1. Font colors
+        2. Font styling
+    3. Hyperlink:
+        1. Styling
+        2. Hover effect
+3. Main:
+    1. Section with 3 `<div>` elements, each representing a column:
+        1. Flex container
+        2. Spacing around
+        3. Spacing between columns
+    2. Each `<div>` needs styling for:
+        1. Background color
+        2. Center-align text
+        3. Font sizing
+4. Footer:
+    1. Font styling
+    2. Spacing around and inside
+    3. Background color
+
+## Validation
+1. Validate your html using [https://validator.w3.org](https://validator.w3.org).
+2. Check your document outline using [https://gsnedders.html5.org/outliner/](https://gsnedders.html5.org/outliner/).
