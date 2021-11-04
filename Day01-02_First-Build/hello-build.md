@@ -8,7 +8,11 @@ You can follow along with your instructor to compare this build to the one you c
 
 ## Steps - HTML
 Use the provided **center-page-framework** folder and add code as follows:
-1. The `<head>` block:
+1. The `<head>` block:<br>
+
+```html
+
+```
 2. The `<body>` block:<br>
     1. `<header>`:
     2. Add a `<section>` block:
