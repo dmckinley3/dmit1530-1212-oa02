@@ -14,11 +14,40 @@ Use the provided **center-page-framework** folder and add code as follows:
 
 ```
 2. The `<body>` block:<br>
-    1. `<header>`:
-    2. Add a `<section>` block:
-    3. Add a `<div>` for the first column:
-    4. Add a `<div>` for the second column:
-    5. Add a `<div>` for the third column:
-    6. Add a `<footer>` below the `</section>`:
+    1. `<header>`:<br>
+
+    ```html
+
+    ```
+
+    2. Add a `<section>` block:<br>
+
+    ```html
+
+    ```
+
+    3. Add a `<div>` for the first column:<br>
+
+    ```html
+
+    ```
+
+    4. Add a `<div>` for the second column:<br>
+
+    ```html
+
+    ```
+
+    5. Add a `<div>` for the third column:<br>
+
+    ```html
+
+    ```
+
+    6. Add a `<footer>` below the `</section>`:<br>
+
+    ```html
+
+    ```
 
 ## Steps - CSS
