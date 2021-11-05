@@ -55,30 +55,62 @@ Add style rules as follows:
 1. Body:
     1. Background color
     2. Font color 
-    3. Font family
+    3. Font family<br>
+
+    ```css
+
+    ```
+
 2. Header/Banner section:
     1. Heading:
         1. Font size
-        2. Font styling
+        2. Font styling<br>
+
+        ```css
+
+        ```
+
     2. Paragraph:
         1. Font colors
-        2. Font styling
+        2. Font styling<br>
+
+        ```css
+
+        ```
     3. Hyperlink:
         1. Styling
-        2. Hover effect
+        2. Hover effect<br>
+
+        ```css
+
+        ```
 3. Main:
     1. Section with 3 `<div>` elements, each representing a column:
         1. Flex container
         2. Spacing around
-        3. Spacing between columns
+        3. Spacing between columns<br>
+
+        ```css
+
+        ```
+
     2. Each `<div>` needs styling for:
         1. Background color
         2. Center-align text
-        3. Font sizing
+        3. Font sizing<br>
+
+        ```css
+
+        ```
+
 4. Footer:
     1. Font styling
     2. Spacing around and inside
-    3. Background color
+    3. Background color<br>
+
+    ```css
+
+    ```
 
 ## Validation
 1. Validate your html using [https://validator.w3.org](https://validator.w3.org).
