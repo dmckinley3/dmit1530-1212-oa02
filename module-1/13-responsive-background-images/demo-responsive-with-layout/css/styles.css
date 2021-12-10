@@ -1,0 +1,97 @@
+/* Start with the smallest size first - serve a scaled-down version of the background imgage to be conscious of page load speed and bandwidth  */
+/* The original image is 4460px x 2973 px and 950KB. Use Photoshop (or squoosh.app) to resize the image down to 600px x 400px and run it through a compression tool to reduce the file size. */
+header {
+    height: 400px; 
+    padding: 2rem;
+    background-color: #eff2f7;
+    /* use shorthand for background-image, background-position (x & y), background-size (cover for full screen), background repeat. Note: background-size may be included in the shorthand but it must come immediately after background-position and separted with a / character  */
+    background: url(../img/small-bg.jpg) center bottom / cover no-repeat;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/* As the screen gets wider, the background image stretches to fit and the lower quality of the image no longer looks good on the screen. We can use media queries to swap out the background image for a larger & higher quality file size. */
+@media only screen and (min-width: 850px){
+    header {
+        /* Again, use Photoshop to resize and compress the original photo.  Size this medium background image to 1200px x 800px*/
+        /* Using the same shorthand property as we did above, simply replace the image url */
+        background: url(../img/med-bg.jpg) center bottom / cover no-repeat;
+    }
+
+    h1 {
+        /* automatically increasing font size */
+        font-size: calc(2.5rem + 2vw);
+    }
+}
+
+/* Adjust the background image (height or positioning) as needed */
+@media only screen and (min-width: 1000px){
+    header {
+        height: 500px;
+    }
+}
+
+/* Use Photoshop to resize and compress a full screen background image for wide screens. Save this one at a higher quality level as it will stretch beyond it's cropped width. Current reccommendations are to keep full screen hero and background images under 250KB */
+@media only screen and (min-width: 1500px){
+    header {
+        background: url(../img/lg-bg.jpg) center bottom / cover no-repeat;
+        height: 700px;
+    }
+}
+
+/* additional responsive column layout */
+.flex-container {
+    display: flex;
+    flex-flow: column;
+}
+
+section {
+    padding: 4.7rem 0;
+    color: #fff;
+    text-align: center;
+}
+
+section:first-of-type {
+    background-color: #73a302;
+}
+
+section:nth-of-type(2) {
+    background-color: #334839;
+    /* on small mobile screens we will want the main content area to come first as it is more important, let us change that order for this screen */
+    order: -1;
+}
+
+section:last-of-type {
+    background-color: #315002;
+}
+
+/* on wider screens we can switch back to the same order the items are in the HTML (left sidebar, main, right sidebar) and place them in a row*/
+/* have the sidebars each take up 24% of the available row space, the main content take up 48%, and the leftover space (4%) can be used to create 2% gutter spacing between the columns */
+@media only screen and (min-width: 850px){
+    .flex-container {
+        margin-top: 2rem;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    section:nth-of-type(2) {
+        order: 0; /* default order position */
+        width: 48%;
+    }
+
+    section {
+        width: 24%;
+    }
+}
+
+/* add a fixed width container for very wide screens but allow background image to go edge-to-edge */
+@media only screen and (min-width: 1200px) {
+    h1,
+    .flex-container {
+        max-width: 71.875rem; /* 1150px */
+        margin: 2rem auto;
+    }
+}

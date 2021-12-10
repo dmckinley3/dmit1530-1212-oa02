@@ -1,0 +1,28 @@
+/* Generic css goes first. This css applies to all screen widths unless its overwritten in a media query. */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 72px;
+    color: #fff;
+}
+.a,
+.b,
+.c {
+    /* viewport units represent a percentage of the current brower viewport */
+    width: 100vw;
+    /* Using calc() is better than a percentage in this case - 33.33333% */
+    height: calc(100vh/3);
+    padding: 20px;
+    background-color: #a91b0d;
+}
+
+.b {
+    background-color: #fe9547;
+}
+
+.c {
+    background-color: #fed547;
+}
+
+
+/* Media queries specify a min-width as a condition and those styles are applied at that screen width and above */
+

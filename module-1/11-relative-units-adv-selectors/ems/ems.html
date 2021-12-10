@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+	<head>
+		<title>ems</title>
+		<style type="text/css">
+
+		html { font-size: 100%; }
+		/*default is 16px */
+		/* desired size / default size = ems 
+		example h1 of 48px so 48 / 16 = 3em
+		 */
+		h1
+		{
+			font-size: 3em;
+			/* to set line height equal to fontsize we now can use 1 em since that is the default */
+			line-height: 1em;
+
+			/* if we wanted to set the margin bottom to 24px we have to start with the new default of 48 
+			so 24 / 48 = 0.5
+			*/
+			margin-bottom: 0.5em;
+		}
+		ul
+		{
+			font-size: 2em; 
+			/* first UL will have a size of 16 * 2 = 32px */
+			/* nested UL will have a size of 32 * 2 = 64px and so on */
+		}
+
+
+		/* lets say we didn't want our default font to be 16px. Say we wanted it to be only 12px. This means we have to adjust our body size from 100% - to how you say???? Take our 12 * 0.625 = 7.5 or 75% */
+
+		html { font-size: 75%; }
+		h1
+		{
+			/* if still want this to 48px then 48 / 12 = 4em */
+			font-size: 4em;
+			line-height: 1em;
+			/* want 32px so 32/48 */
+			margin-bottom: 0.666em;
+		}
+
+		/*now what size is our UL
+		first = 12 * 2 = 24 ;
+		second = 24 * 2 = 48
+		*/
+
+		</style>
+	</head>
+	<body>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<h1>This is a heading </h1>
+
+		<ul>
+			<li>first</li>
+			<li>second</li>
+			<li>third
+				<ul>
+					<li>nested first</li>
+					<li>nested second</li>
+				</ul>
+			</li>
+		</ul>
+
+	</body>
+</html>
