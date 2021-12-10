@@ -1,0 +1,12 @@
+/* This is for testing purposes. */
+body {
+	background-color: azure;
+}
+
+/* This is for our wrapper <div>. */
+.container {
+	width: 960px;
+	margin: 0 auto;
+	line-height: 1.5;
+	font-size: 100%;
+}
