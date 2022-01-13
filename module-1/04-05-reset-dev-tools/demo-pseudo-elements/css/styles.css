@@ -55,12 +55,45 @@ section p{
 /* ----- Pseudo Elemenet Selectors ----- */
 
 /* Drop cap */
-
+p.drop-cap::first-letter{
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 72px;
+	font-style: italic;
+	float: left;
+	line-height: 0.6;
+	margin: 10px 10px 0 0;
+	color: darkblue;
+}
 
 /* First Line */
-
+p:last-child::first-line {
+	color: darkblue;
+	font-weight: bold;
+}
 
 /* Marker */
-
+::marker{
+	font-weight: bold;
+	color: rgb(126, 15, 236);
+	font-size: 24px;
+}
 
 /* Selection */
+::selection{
+	color: yellow;
+	background: red;
+}
+
+blockquote{
+	font-style: oblique;
+}
+
+footer.drop-cap::first-letter{
+	font-family: 'Time New Roman', Times, serif;
+	font-size: 48px;
+	font-style: italic;
+	float: left;
+	line-height: 1;
+	margin: 0 10px 0 0;
+	color: darkblue;
+}
