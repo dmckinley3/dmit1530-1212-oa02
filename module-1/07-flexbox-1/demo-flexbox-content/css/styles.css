@@ -36,3 +36,19 @@ li {
 .f {
     background-color: #9370db;
 }
+
+/* 
+    Style rules added in class. Several values were explored for:
+    justify-content
+    align-items
+*/
+
+ul.flex{
+    display: flex;
+
+    justify-content: space-evenly;
+
+    align-items: stretch;
+
+    padding: 10px;
+}
