@@ -1,0 +1,70 @@
+/*
+Generic CSS, mobile first therefore elements fit edge-to-edge of the
+browser screen and will grow as the screen increases.
+*/
+
+body{
+  /* base properties for the web page */
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+header,
+footer{
+  background-color: #115194;
+  margin-bottom: 24px;
+}
+
+header > h1{
+  padding: 48px;
+}
+
+header nav{
+  background-color: #4bb19d;
+  padding: 16px;
+}
+
+/*
+main > section > h2 {
+  color:black;
+}
+*/
+
+.promo{
+  background-color: #b0d892;
+  margin-bottom: 24px;
+  padding: 128px 16px;
+  /* liquid layout is done in % so that it will grow with the screen width */
+  width: 32%;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner{
+  background-color: #b8bac3;
+  margin-bottom: 24px;
+  padding: 188px 16px;
+}
+
+img{
+  width: 100%;
+  height: 75%;
+}
+
+footer{
+  padding: 48px;
+}
+
+/* add a media query to change to a fixed-width on larger resolutions */
+@media screen and (min-width: 1366px){
+  .container{
+    width: 1200px; /* fixed width */
+    margin: 0 auto;
+  }
+}
