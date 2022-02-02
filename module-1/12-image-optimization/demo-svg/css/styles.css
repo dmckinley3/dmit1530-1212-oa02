@@ -1,0 +1,21 @@
+section{
+  padding: 0 0.75rem;
+}
+
+svg{
+  width: 175px;
+  height: 175px;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+svg:hover{
+  box-shadow: 2px 2px 3px #ccc;
+}
+
+.svg{
+  width: 175px;
+  height: 175px;
+  padding: 5rem;
+  border-radius: 4px;
+}
