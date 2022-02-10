@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'rubikbold';
+  src: url(../font/rubik-bold.woff2) format('woff2'),
+       url(../font/rubik-bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'rubikitalic';
+  src: url(../font/rubik-italic.woff2) format('woff2'),
+       url(../font/rubik-italic.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'rubikregular';
+  src: url(../font/rubik-regular.woff2) format('woff2'),
+       url(../font/rubik-regular.woff) format('woff');
+}
+
+@media only screen and (min-width:960px){
+  
+
+  h1{
+    font-family: rubikbold, sans-serif;
+  }
+
+  p{
+    font-family: roboto, sans-serif;
+  }
+}

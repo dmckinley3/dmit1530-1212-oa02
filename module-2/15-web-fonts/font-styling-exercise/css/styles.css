@@ -1,0 +1,74 @@
+h2{
+  font-weight:normal;
+}
+
+.font-style{
+  font-style:italic;
+}
+
+.font-weight{
+  font-weight:bolder;
+}
+
+.font-size{
+  font-size: 3em;
+}
+
+.font-family{
+  font-family:'Courier New', Courier, monospace;
+}
+
+.line-height{
+  line-height: 2rem;
+  border: 1px solid blue;
+}
+
+/*
+The font property is a short hand for
+    font-style
+    font-variant
+    font-weight
+    font-size/line-height
+    font-family
+The font-size and font-famlily values are required
+*/
+.short-hand{
+  font: italic small-caps 900 3rem/5rem 'Courier New', Courier, monospace;
+  border: 1px solid blue;
+}
+
+h2.first-letter::first-letter{
+  font-size: 3.5rem;
+}
+
+.text-transform{
+  text-transform:uppercase;
+}
+
+.font-variant{
+  font-variant:small-caps;
+}
+
+.text-align{
+  text-align:end;
+}
+
+.text-indent{
+  text-indent: 2.5%; /* can do a fixed indent i.e., 4rem */
+}
+
+.text-decoration{
+  text-decoration: red wavy line-through;
+}
+
+.text-shadow{
+  text-shadow: -2px -2px lightblue;
+}
+
+.letter-spacing{
+  letter-spacing: 0.5vmax; /* can alos use a relative unit value, or decrese the spacing */
+}
+
+.word-spacing{
+  word-spacing: 1.75rem;
+}
